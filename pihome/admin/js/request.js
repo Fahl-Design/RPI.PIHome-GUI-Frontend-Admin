@@ -93,13 +93,10 @@ function add_device(){
 	var device_name  = document.getElementsByName("device_name")[0].value;
 	var room_id      = document.getElementsByName("room_id")[0].value;
 	var letter       = document.getElementsByName("letter")[0].value;
-	var c1  		 = document.getElementsByName("c1")[0].value;
-	var c2		     = document.getElementsByName("c2")[0].value;
-	var c3		     = document.getElementsByName("c3")[0].value;
-	var c4	    	 = document.getElementsByName("c4")[0].value;
-	var c5   		 = document.getElementsByName("c5")[0].value;
+	var code  		 = document.getElementsByName("code")[0].value;
+
 	var device_sort	 = document.getElementsByName("sort")[0].value;				
-	var params = "?w=device&o=insert&aktiv=" + device_aktiv + "&device_name=" + device_name + "&room=" + room_id + "&letter=" + letter + "&code=" + c1 + c2 + c3 + c4 + c5 + "&sort=" + device_sort;
+	var params = "?w=device&o=insert&aktiv=" + device_aktiv + "&device_name=" + device_name + "&room=" + room_id + "&letter=" + letter + "&code=" + code + "&sort=" + device_sort;
 	if(device_name!=""){
 		request('request.php', 'GET', params, function(){ window.location.reload(); } );
 	}

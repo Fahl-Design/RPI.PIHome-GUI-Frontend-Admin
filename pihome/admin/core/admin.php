@@ -83,7 +83,7 @@
 			</select>
 			<br><br>
 			Code:<br>
-			<input type="text" name="sort" size="255" value="0">
+			<input type="text" name="c1" size="255" value="0">
 			<br><br>				
 			Sort:<br>
 			<input type="text" name="sort" size="10" value="0">				
