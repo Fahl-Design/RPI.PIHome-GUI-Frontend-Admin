@@ -124,22 +124,15 @@ function allOff()
 	while($getallon = mysql_fetch_assoc($query_alloff)){
 		$stat="off";		
 		setLightStatus($getallon["id"],$stat);		
-        if($getallon['letter']=="A"){
-            $letter = "1";
-        }elseif($getallon['letter']=="B"){
-            $letter = "2";
-        }elseif($getallon['letter']=="C"){
-            $letter = "3";
-        }elseif($getallon['letter']=="D"){
-            $letter = "4";
-        }
+        $letter = $getallon['letter'];
+        
         if($stat=="on"){
-                $status = "1";
+                $status = "ON";
         }elseif($stat=="off"){
-                $status = "0";
+                $status = "OFF";
         }
         $co = $getallon['code'];
-        shell_exec('sudo /home/div/rcswitch-pi/send '.$co.' '.$letter.' '.$status.' ');        
+        shell_exec("sudo ./mumbiSet.sh {$letter} {$status}");  
 	}	
 }
 

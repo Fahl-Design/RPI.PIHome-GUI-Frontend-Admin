@@ -80,30 +80,10 @@
 				<option value="A">A</option>
 				<option value="B">B</option>
 				<option value="C">C</option>
-				<option value="D">D</option>
 			</select>
 			<br><br>
 			Code:<br>
-			<select name="c1">
-				<option value="0">0</option>
-				<option value="1">1</option>
-			</select>
-			<select name="c2">
-				<option value="0">0</option>
-				<option value="1">1</option>
-			</select>
-			<select name="c3">
-				<option value="0">0</option>
-				<option value="1">1</option>
-			</select>
-			<select name="c4">
-				<option value="0">0</option>
-				<option value="1">1</option>
-			</select>
-			<select name="c5">
-				<option value="0">0</option>
-				<option value="1">1</option>
-			</select>
+			<input type="text" name="sort" size="255" value="0">
 			<br><br>				
 			Sort:<br>
 			<input type="text" name="sort" size="10" value="0">				
