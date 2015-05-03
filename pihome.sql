@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `pi_devices` (
   `room_id` varchar(255) COLLATE latin1_german1_ci NOT NULL,
   `device` varchar(255) COLLATE latin1_german1_ci NOT NULL,
   `letter` varchar(55) COLLATE latin1_german1_ci NOT NULL,
-  `code` varchar(55) COLLATE latin1_german1_ci NOT NULL DEFAULT '00000',
+  `code` varchar(255) COLLATE latin1_german1_ci NOT NULL DEFAULT '00000',
   `status` varchar(55) COLLATE latin1_german1_ci NOT NULL DEFAULT '0',
   `sort` varchar(55) COLLATE latin1_german1_ci NOT NULL DEFAULT '0',
   `aktiv` varchar(55) COLLATE latin1_german1_ci NOT NULL DEFAULT '0',
